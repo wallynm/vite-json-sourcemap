@@ -1,0 +1,15 @@
+{
+  "name": "vite-json-sourcemap",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-data.mjs",
+    "dev": "vite",
+    "check": "node scripts/generate-data.mjs && node check.mjs vite && node check.mjs vite7"
+  },
+  "devDependencies": {
+    "vite": "8.3.5",
+    "vite7": "npm:vite@7.3.7"
+  }
+}
